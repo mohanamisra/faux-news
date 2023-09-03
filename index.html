@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faux News</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href = "css/style.css">
+</head>
+<body>
+    <section class = "container">
+
+        <!-- NAVBAR -->
+        <div class = "navbar">
+            <a class = "navbar-brand" href = "#">Faux News Blog</a>
+        </div>
+
+        <!-- CONTENT -->
+        <div class = "content">
+            <p class = "headline scroll" data-rate = "-0.5">5 Reasons Workplaces Should Absolutely Love Short, Strict Deadlines</p>
+            <div class = "first scroll">
+                <h1>Adrenaline Overload</h1>
+                <p>Who doesn't love the thrill of racing against the clock in a sheer state of panic all the time? Honestly, giving up all enjoyment in order to complete an unfairly large amount of work alone, is the life man!
+                </p>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <img class = "footer-image" src = "images/cultish.jpg">
+        <div class = "footer">
+            Made by Mohana Misra &#169; 2023
+        </div>
+    </section>
+    <script>
+        
+        window.addEventListener('scroll', function (e) {
+            let targets = document.getElementsByClassName("scroll");
+            let windowHeight = window.innerHeight;
+
+            for(let i = 0; i < targets.length; i++) {
+                let target = targets[i];
+                let pos = window.scrollY * target.dataset.rate;
+                target.style.transform = `translate3d(0px, ${pos}px, 0px)`;
+            }
+        })
+    </script>
+</body>
+</html>
