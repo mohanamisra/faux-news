@@ -52,6 +52,11 @@ html, body {
     margin-top: 100px;
 }
 
+.first .heading {
+    display: none;
+    margin-top: 135px;
+}
+
 .para {
     font-size: 24px;
 }
