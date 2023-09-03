@@ -18,6 +18,16 @@
         </div>
 
         <!-- CONTENT -->
+        <div id = "pop-up">
+            <div class = "pop-up-header">
+                <div class = "title">Have A Question?</div>
+                <button class = "close-button">&times;</button>
+            </div>
+            <div class = "pop-up-body">We cannot help you right now :( <br><br>
+                All our customer service agents have resigned in protest because they accuse us of overworking them.<br><br>We are currently contesting the case and we're sure that we will win because we have the money to.<br><br>
+                Thank you for your cooperation and understanding!</div>
+        </div>
+        <div id = "overlay"></div>
         <div class = "content">
             <p class = "headline scroll" data-rate = "-0.85" data-direction = "vertical">5 Reasons Workplaces Should Absolutely Love Short, Strict Deadlines</p>
 
@@ -44,6 +54,12 @@
             <div class = "fifth scroll fade-in" data-rate = "-0.5" data-direction = "vertical">
                 <p class = "heading">Our History, Our Heritage</p>
                 <p class = "para">A fundamental tenet of capitalism is the dissatisfaction of workers. We workplace managers, administrative bodies, and educational institutions must respect this tradition! I'm sorry, did you say something about educational institutions not being capitalistic machines that end up mistreating their students while making money off of them anyways under the false pretense of delivering education? Oh, you sweet summer child you do make me laugh.
+                </p>
+            </div>
+            <div class = "card scroll fade-in" data-rate = "-0.5" data-direction = "vertical">
+                <p class = "heading">CTA Section For You To Ignore</p>
+                <p class = "para">If you want to learn more about how to make money off of human beings while making sure they lead a markedly unproductive life because they believe hustling is the way to go (while not realising their 'hustles' only exist to make YOU more money), then follow me on Instagram!<br><br>
+                    Until the next time!                    
                 </p>
             </div>
         </div>
@@ -99,9 +115,30 @@
         })
 
         let help = document.getElementById('help-button');
+        let closeButton = document.getElementsByClassName('close-button')[0];
+        let overlay = document.getElementById('overlay');
+
         help.addEventListener('click', () => {
-            console.log('clicked');
+            let popup = document.getElementById('pop-up');
+            openPopUp(popup);
         })
+
+        closeButton.addEventListener('click', () => {
+            let popup = document.getElementById('pop-up');
+            closePopUp(popup);
+        })
+
+        function openPopUp(popup) {
+            if(popup == null) return;
+            popup.classList.add('active');
+            overlay.classList.add('active');
+        }
+
+        function closePopUp(popup) {
+            if(popup == null) return;
+            popup.classList.remove('active');
+            overlay.classList.remove('active');
+        }
     </script>
 </body>
 </html>
