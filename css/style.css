@@ -65,6 +65,10 @@ html, body {
     opacity: 1;
 }
 
+.para a:hover {
+    font-weight: 700;
+}
+
 /* CARD STYLING */
 
 .card {
