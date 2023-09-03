@@ -2,7 +2,7 @@ html, body {
     padding: 0px;
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
-    height: 200%;
+    height: 150%;
 }
 
 .container {
@@ -62,6 +62,26 @@ html, body {
 
 .fade-in.appear {
     opacity: 1;
+}
+
+/* CARD STYLING */
+
+.card {
+    border: 5px solid #5603AD;
+    border-radius: 42px;
+    margin-top: 100px;
+    padding: 10px 36px;
+    max-width: 90%;
+    background-color: #F0FFF1;
+}
+
+.card .title {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.card .para {
+    font-size: 20px;
 }
 
 /* HELP BUTTON HOVERING ANIMATION */
