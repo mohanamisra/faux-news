@@ -19,10 +19,30 @@
 
         <!-- CONTENT -->
         <div class = "content">
-            <p class = "headline scroll" data-rate = "-0.5">5 Reasons Workplaces Should Absolutely Love Short, Strict Deadlines</p>
-            <div class = "first scroll">
-                <h1>Adrenaline Overload</h1>
-                <p>Who doesn't love the thrill of racing against the clock in a sheer state of panic all the time? Honestly, giving up all enjoyment in order to complete an unfairly large amount of work alone, is the life man!
+            <p class = "headline scroll" data-rate = "-0.85">5 Reasons Workplaces Should Absolutely Love Short, Strict Deadlines</p>
+            <div class = "first scroll" data-rate = "-0.5">
+                <p class = "heading">Adrenaline Overload</p>
+                <p class = "para">Who doesn't love the thrill of racing against the clock in a sheer state of panic all the time? Honestly, giving up all enjoyment in order to complete an unfairly large amount of work alone, is the life man!
+                </p>
+            </div>
+            <div class = "second scroll" data-rate = "-0.5">
+                <p class = "heading">Quality, Schmality</p>
+                <p class = "para">The biggest companies put out bad products that constantly glitch, or have grave issues we are told to ignore. There is no reason to give workers enough time to build good, useful, long-lasting products that they care for. Like, what else, the world is made up of unicorns and rainbows and happy citizens living productive lives within their means? Get out haha.
+                </p>
+            </div>
+            <div class = "third scroll" data-rate = "-0.5">
+                <p class = "heading">People Waste Their Time Anyways</p>
+                <p class = "para">Have you seen students who dare to watch a show on Netflix while they should be sobbing over writing twenty useless experiments for three labs and preparing for exams simultaneously? Doesn't it make your blood boil? Similarly, we must make sure that workers don't get to do anything they want with their time (as if they own it!). Especially sleep. Who even needs it...I don't get it.
+                </p>
+            </div>
+            <div class = "fourth scroll" data-rate = "-0.5">
+                <p class = "heading">Zero Fear of Rebellious Opinions</p>
+                <p class = "para">Exhausted people can't raise their voices! So everything unjust that you're doing will definitely be ignored by the authorities. Not that you need it lol. As if the government cares about the workers, ha!
+                </p>
+            </div>
+            <div class = "fifth scroll" data-rate = "-0.5">
+                <p class = "heading">Our History, Our Heritage</p>
+                <p class = "para">A fundamental tenet of capitalism is the dissatisfaction of workers. We workplace managers, administrative bodies, and educational institutions must respect this tradition! I'm sorry, did you say something about educational institutions not being capitalistic machines that end up mistreating their students while making money off of them anyways under the false pretense of delivering education? Oh, you sweet summer child you do make me laugh.
                 </p>
             </div>
         </div>
@@ -37,10 +57,10 @@
         
         window.addEventListener('scroll', function (e) {
             let targets = document.getElementsByClassName("scroll");
-            let windowHeight = window.innerHeight;
 
             for(let i = 0; i < targets.length; i++) {
                 let target = targets[i];
+
                 let pos = window.scrollY * target.dataset.rate;
                 target.style.transform = `translate3d(0px, ${pos}px, 0px)`;
             }
