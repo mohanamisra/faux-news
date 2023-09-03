@@ -49,6 +49,7 @@
         </div>
 
         <!-- FOOTER -->
+        <button id = "help-button"><img class = "help hover" src = "images/question.png"></button>
         <img class = "footer-image scroll" data-rate="-3" data-direction="horizontal" src = "images/cultish.jpg">
         <div class = "footer">
             Made by Mohana Misra &#169; 2023
@@ -95,6 +96,11 @@
                     target.style.transform = `translate3d(${pos}px, 0px, 0px)`;
                 }
             }
+        })
+
+        let help = document.getElementById('help-button');
+        help.addEventListener('click', () => {
+            console.log('clicked');
         })
     </script>
 </body>
